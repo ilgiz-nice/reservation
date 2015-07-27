@@ -1,0 +1,235 @@
+/*
+			GENERAL SETTING
+*/
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+[data-ember-action] {
+	cursor: pointer;
+}
+/*
+			HEADER
+*/
+.header {
+	padding: 0.5em;
+}
+.header .nav {
+	margin-left: 20em;
+}
+.header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header li {
+	display: inline-block;
+    width: 7.5em;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #00CCCC;
+    text-align: center;
+}
+/*
+			FOOTER
+*/
+.footer {
+	padding: 0.5em;
+}
+.footer .nav {
+	margin-left: 20em;
+}
+.footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer li {
+	display: inline-block;
+    width: 7.5em;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #00CCCC;
+    text-align: center;
+}
+/*
+			STEP DESIGN
+*/
+.steps {
+	height: 7em;
+    padding: 0.5em;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 7em;
+}
+.steps ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.step {
+	display: inline-block;
+    width: 14em;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #00CCCC;
+}
+/*
+			CONTENT DESIGN
+*/
+.content {
+	height: 25em;
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/*
+			TAB1 - Resource
+*/
+.resource .halls {
+	height: 5em;
+	line-height: 5em;
+}
+.resource .halls  .item {
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	border: 1px solid black;
+}
+.resource .halls .item-add {
+	border: 1px solid green;
+}
+.resource .halls .item-add span {
+	font-size: 1em;
+}
+.resource .row {
+	height: 20em;
+}
+.resource .row .table td{
+	border: 1px solid #DDD;
+}
+.resource .row .table input {
+	outline: 0;
+	background: transparent;
+}
+.resource .row .item-add span {
+	font-size: 1em;
+}
+/*
+			TAB2 - Product
+*/
+.product {
+	text-align: left;
+}
+.product .info {
+	width: 20em;
+	text-align: left;
+	display: inline-block;
+}
+.product label {
+	width: 10em;
+	height: 2em;
+	line-height: 2em;
+}
+.product input {
+	width: 20em;
+	height: 2em;
+	line-height: 2em;
+	display: block;
+}
+.product button {
+	width: 10em;
+	height: 2em;
+	line-height: 2em;
+}
+.product .films {
+	width: 37.3em;
+	display: inline-block;
+	position: absolute;
+}
+.product .films .film {
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+.product .films .film:nth-child(1) {
+	border: 1px solid #00CC33;
+	background: #00FF33;
+}
+.product .films .film:nth-child(2) {
+	border: 1px solid #0033FF;
+	background: #0066FF;
+}
+.product .films .film:nth-child(3) {
+	border: 1px solid #CC0000;
+	background: #FF0000;
+}
+.product .films .film:nth-child(4) {
+	border: 1px solid #CC3300;
+	background: #FF3300;
+}
+.product .films .film:nth-child(5) {
+	border: 1px solid 0099FF;
+	background: #00CCFF;
+}
+/*
+			TAB3 - Schedule
+*/
+.schedule .hall-tabs {
+	text-align: left;
+}
+.schedule .hall-tabs .hall-tab {
+	display: inline-block;
+    width: 10em;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid black;
+    text-align: center;
+}
+.schedule .timeline {
+	padding: 0.5em 0;
+}
+.schedule .timeline div {
+	width: 67em;
+	height: 4em;
+	border: 1px solid black;
+}
+.schedule .timeline .item {
+	height: 4em;
+	line-height: 4em;
+	border: 1px solid black;
+}
+.schedule .films {
+	text-align: left;
+}
+.schedule .films .film {
+	height: 4em;
+	text-align: center;
+	line-height: 4em;
+	display: inline-block;
+	margin: 0 1em;
+}
+.schedule .films .film:nth-child(1) {
+	border: 1px solid #00CC33;
+	background: #00FF33;
+}
+.schedule .films .film:nth-child(2) {
+	border: 1px solid #0033FF;
+	background: #0066FF;
+}
+.schedule .films .film:nth-child(3) {
+	border: 1px solid #CC0000;
+	background: #FF0000;
+}
+.schedule .films .film:nth-child(4) {
+	border: 1px solid #CC3300;
+	background: #FF3300;
+}
+.schedule .films .film:nth-child(5) {
+	border: 1px solid 0099FF;
+	background: #00CCFF;
+}

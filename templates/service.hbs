@@ -1,0 +1,83 @@
+<div class="steps">
+	<ul>
+		<li class="step step1" {{action 'tab_change' 'tab1'}}>Ресурс</li>
+		<li class="step step2" {{action 'tab_change' 'tab2'}}>Продукт</li>
+		<li class="step step3" {{action 'tab_change' 'tab3'}}>Расписание</li>
+		<li class="step step4" {{action 'tab_change' 'tab4'}}>Данные</li>
+	</ul>
+</div>
+<div class="content">
+    <div class="tab tab1 resource">
+        <div class="halls">
+            {{#each item in hallArray}}
+            <div class="item" {{action 'hall_active' item}}>
+                <span>{{item}}</span>
+                <span class="delete" {{action 'hall_delete' item}}>X</span>
+            </div>
+            {{/each}}
+            <div class="item item-add" {{action 'hall_add'}}>
+                <span>+</span>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ряд</th>
+                        <th>Количество мест</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each item in rowArray}}
+                    <tr>
+                        <td>{{input value=item.row}}</td>
+                        <td>{{input value=item.seats}}</td>
+                    </tr>
+                    {{/each}}
+                    <tr colspan="2" class="item-add" {{action 'row_add'}}>
+                        <td>
+                            <span>+</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tab tab2 product">
+        <div class="info">
+            <label for="">Название</label>
+            {{input value=title}}
+            <label for="">В часах</label>
+            {{input type="number" min=1 max=3 step=1 value=hours}}
+            <label for="">В минутах</label>
+            {{input type="number" min=0 max=60 step=10 value=minutes}}
+            <button {{action 'film_add' title hours minutes}}>Добавить</button>
+        </div>
+        <div class="films">
+            Фильмы:
+            {{#each item in filmArray}}
+            <div class="film" {{bind-attr style="item.css"}}>{{item.title}} - {{item.lenght}} минут</div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="tab tab3 schedule">
+        <div class="hall-tabs">
+            {{#each item in hallArray}}
+            <div class="hall-tab" {{action 'timeline_tab' item}}>{{item}}</div>
+            {{/each}}
+        </div>
+        <div class="timeline">
+            <div>
+                {{#each item in timelineArray}}
+                <div class="item"></div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="films">
+            {{#each item in filmTimelineArray}}
+            <div class="film" {{bind-attr style="item.css"}}>{{item.title}} - {{item.lenght}} минут</div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="tab tab4 personal"></div>
+</div>
